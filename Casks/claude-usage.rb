@@ -1,8 +1,8 @@
 cask "claude-usage" do
-  version "3.0.4"
-  sha256 "45bc567b2c129979f5ec60a53e6d5673a2d93bca7664390407095e3e3440b2d1"
+  version "3.0.5"
+  sha256 "3070b7c8b609b40e68a3181b9f0c7b33fb17bf13c8076b28221fdfa5b6afb7d3"
 
-  url "https://github.com/revenium/Claude-Usage-Tracker/releases/download/v#{version}/Claude-Usage.zip"
+  url "https://github.com/revenium/Claude-Usage-Tracker/releases/download/v#{version}/Claude-Usage.dmg"
   name "Claude Usage"
   desc "Monitor Claude and Codex subscription usage from the menu bar"
   homepage "https://github.com/revenium/Claude-Usage-Tracker"
