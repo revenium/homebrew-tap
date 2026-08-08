@@ -1,6 +1,6 @@
 cask "claude-usage" do
-  version "3.3.1"
-  sha256 "777fe7540fb1d77d0a9f98fd578d274cf3e0baf81c0b9869acb81d210d0547ac"
+  version "3.3.2"
+  sha256 "ef3539fd1038d34d1e56e667393f18e5cfaa1137a5ae186bbfe41dc74e6caa32"
 
   url "https://github.com/revenium/Claude-Usage-Tracker/releases/download/v#{version}/Claude-Usage.dmg"
   name "Claude Usage"
