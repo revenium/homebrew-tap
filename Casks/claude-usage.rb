@@ -5,15 +5,20 @@ cask "claude-usage" do
   url "https://github.com/revenium/Claude-Usage-Tracker/releases/download/v#{version}/Claude-Usage.dmg"
   name "Claude Usage"
   desc "Monitor Claude and Codex subscription usage from the menu bar"
-  homepage "https://github.com/revenium/Claude-Usage-Tracker"
+  homepage "https://github.com/revenium/RevvyTach"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
+  deprecate! date: "2026-08-15", because: "it was renamed to RevvyTach"
 
   auto_updates true
   depends_on macos: ">= :sonoma"
 
   app "Claude Usage.app"
+
+  caveats <<~EOS
+    Claude Usage Tracker is now RevvyTach. This cask installs the final
+    release under the old name (v3.4.0), which will offer an in-app update
+    to RevvyTach. To install the renamed app directly:
+
+      brew install --cask revenium/tap/revvytach
+  EOS
 end
