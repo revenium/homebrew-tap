@@ -1,6 +1,6 @@
 cask "revvytach" do
-  version "4.0.2"
-  sha256 "476c6bab7ccff38d1dff75894916d216409a70f22d6a440407c1d5c6c627e7ca"
+  version "4.0.3"
+  sha256 "b92b1af3299450e0da8544b0a64af94950a1884679c4a28d158ca06e5352895b"
 
   url "https://github.com/revenium/RevvyTach/releases/download/v#{version}/RevvyTach.dmg"
   name "RevvyTach"
