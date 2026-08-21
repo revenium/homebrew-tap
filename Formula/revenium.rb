@@ -5,13 +5,13 @@
 class Revenium < Formula
   desc "Manage your Revenium account from the command line"
   homepage "https://github.com/revenium/revenium-cli"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/revenium/revenium-cli/releases/download/v1.3.0/revenium-cli_1.3.0_darwin_amd64.tar.gz"
-      sha256 "16a667d48a5517e5d62853422e8476dec65076c827848c8dee71ae2da4c4ca45"
+      url "https://github.com/revenium/revenium-cli/releases/download/v1.4.0/revenium-cli_1.4.0_darwin_amd64.tar.gz"
+      sha256 "f9a1f3d139b90a68a31f3b516a421071a437042d125d863cc3d56e509ab7e13a"
 
       define_method(:install) do
         bin.install "revenium"
@@ -21,8 +21,8 @@ class Revenium < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/revenium/revenium-cli/releases/download/v1.3.0/revenium-cli_1.3.0_darwin_arm64.tar.gz"
-      sha256 "dab3bd4e066f07f55788a54197a0ded8ae4a75affe4ea0b2b56a0a821d9ca90f"
+      url "https://github.com/revenium/revenium-cli/releases/download/v1.4.0/revenium-cli_1.4.0_darwin_arm64.tar.gz"
+      sha256 "aa7c1923e1470968fc403012339bb5ad89c9f632dc67b1d8a2f8a7748937122f"
 
       define_method(:install) do
         bin.install "revenium"
@@ -35,8 +35,8 @@ class Revenium < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revenium/revenium-cli/releases/download/v1.3.0/revenium-cli_1.3.0_linux_amd64.tar.gz"
-      sha256 "3de14b10ac3a5d3e8a204eae22ec85044c97f1fc8a1fd855e47c616cf533a749"
+      url "https://github.com/revenium/revenium-cli/releases/download/v1.4.0/revenium-cli_1.4.0_linux_amd64.tar.gz"
+      sha256 "b865ae7a0a2b8aceb2f94c13f1c8b217b1ea371f4973fd2644ab1c73b027ac1a"
       define_method(:install) do
         bin.install "revenium"
         bash_completion.install "completions/revenium.bash" => "revenium"
@@ -45,8 +45,8 @@ class Revenium < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revenium/revenium-cli/releases/download/v1.3.0/revenium-cli_1.3.0_linux_arm64.tar.gz"
-      sha256 "cb25e7a3f0076f518d0c8611e5e7b32d8633b07b00ff2d62532bd00ed9364173"
+      url "https://github.com/revenium/revenium-cli/releases/download/v1.4.0/revenium-cli_1.4.0_linux_arm64.tar.gz"
+      sha256 "2a67436edd640f3f8f8f9912f6026ad9ed10a292065dd4ef3ad819321dc5f9ff"
       define_method(:install) do
         bin.install "revenium"
         bash_completion.install "completions/revenium.bash" => "revenium"
